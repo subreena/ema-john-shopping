@@ -4,13 +4,24 @@
 }
 .productContainer{
     width: 70%;
+    float: left;
     margin: 10px 10px 10px 20px;
     border-right: 1px solid gray;
 }
 .cartContainer{
     padding: 30px;
-    position: fixed;
+    float: left;
     border-radius: 10px;
     border: 3px solid orange;
 }
-
+ 
+@media screen and (max-width: 900px){
+    .shopContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .productContainer{
+        width:100%;
+    }
+    
+}
